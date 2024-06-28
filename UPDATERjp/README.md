@@ -7,3 +7,5 @@ Si les [alias](https://github.com/jppill/Custom-scripts/tree/main/ALIAS) personn
 
 Sinon, inscrire dans le terminal:
 >bash ~/Documents/Github/UPDATERjp/update_apt_jp.sh
+
+**_*rappel: Ctrl+Shift+v pour coller dans le terminal_**
