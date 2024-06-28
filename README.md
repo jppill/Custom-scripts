@@ -24,8 +24,10 @@ ________________________________________
 ________________________________________
 
 # PROCÉDURE pour installer les scripts localement
-## La mise à jour des scripts est automatique en utilisant l'UPDATERjp
-Installation de certaines applications
+## La mise à jour des scripts est automatique en utilisant l'UPDATERjp (Option M du menu) ou en inscrivant dans le terminal:
+> cd ~/Documents/Github/ && git pull scripts-gh main && cd && hello
+## Applications requise dans les scripts
+Inscrire dans le terminal:
 > sudo apt install -y nala git neofetch lolcat cowsay fortune clamav chkrootkit rkhunter snapd flatpak tlp kate alsa-utils
 
 ## Installer git sur Linux
