@@ -5,7 +5,7 @@ ________________________________________
 > Connaissance de base du terminal - SHELL
 ________________________________________
 
-## ALIAS
+## [ALIAS](ALIAS)
 > Liste d'alias a installer manuellement
 
 ## REINSTALLATION
