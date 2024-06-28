@@ -5,5 +5,5 @@ ________________________________________
 Si les [alias](https://github.com/jppill/Custom-scripts/tree/main/ALIAS) personnalisés sont installés, simplement inscrire dans le terminal:
 > update
 
-Sinon, inscrire:
->
+Sinon, inscrire dans le terminal:
+>bash ~/Documents/Github/UPDATERjp/update_apt_jp.sh
