@@ -8,10 +8,10 @@ ________________________________________
 ## [ALIAS](ALIAS)
 > Liste d'alias a installer manuellement
 
-## REINSTALLATION
+## [REINSTALLATION](REINSTALLATION)
 > Pour bien partir une nouvelle installation de type DEBIAN
 
-## UPDATERjp
+## [UPDATERjp](UPDATERjp)
 > Gestionnaire via terminal au quotidien pour MAJ (APT/NALA/SNAP/FLATPAK) et autres options
 >   - APT/NALA SNAP FLATPAK
 >   - Nord VPN
