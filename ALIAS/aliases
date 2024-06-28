@@ -1,10 +1,10 @@
-alias update='bash ~/Documents/Github/update_apt_jp.sh'
+alias update='bash ~/Documents/Github/UPDATERjp/update_apt_jp.sh'
 alias sd="shutdown 0"
 alias rb="reboot"
 alias hello="source ~/.bashrc"
 alias bashrc="kate ~/.bashrc"
 alias aliases="kate ~/.bash_aliases"
-alias update_jp="kate ~/Documents/Github/update_apt_jp.sh"
+alias update_jp="kate ~/Documents/Github/UPDATERjp/update_apt_jp.sh"
 alias alsa_reset="sudo alsa force-reload"
 alias commande_son="sudo fuser -v /dev/snd/*"
 alias info_son="pactl info"
