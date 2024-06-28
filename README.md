@@ -12,7 +12,7 @@ ________________________________________
 > Pour bien partir une nouvelle installation de type DEBIAN - Linux
 
 ## [UPDATERjp](UPDATERjp)
-> Gestionnaire Linux Debian via terminal pour mise a jour (APT/NALA/SNAP/FLATPAK) et autres options pratiques
+> Gestionnaire Linux Debian via terminal pour mise a jour (APT/NALA-SNAP-FLATPAK) et autres options pratiques
 >   - APT/NALA SNAP FLATPAK
 >   - ClamAV antivirus + ROOTkit
 >   - Nord VPN
