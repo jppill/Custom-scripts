@@ -1,4 +1,3 @@
-# Custom-scripts
 # Fichier de mise à jour custom de jppill
 Mise à jour de distribution **DEBIAN** Linux via APT-NALA et autres surprises (version Française)
 ________________________________________
