@@ -35,7 +35,7 @@ Inscrire dans le terminal:
 > sudo apt install git -y
 
 ## Comment relier **_GIT_** et **_Linux_** [*[1]*](https://www.freecodecamp.org/news/create-and-sync-git-and-github-repositories/)
-- Création d'un dossier «Github» dans Documents (nom au choix):
+- Création d'un dossier «Github» dans Documents:
 > ./Documents/Github/
 - Aller dans ce dossier via le terminal (cd ./Documents/Github/), puis envoyer la commande:
 > git init
