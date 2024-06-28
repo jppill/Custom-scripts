@@ -29,7 +29,7 @@ ________________________________________
 **_alternative_** Inscrire manuellement dans le terminal:
 > cd ~/Documents/Github/ && git pull scripts-gh main && cd && hello \
 
-**_Ctrl+Shift+v pour coller dans le terminal_**
+**_rappel: Ctrl+Shift+v pour coller dans le terminal_**
 ## Applications requise dans les scripts
 Inscrire dans le terminal:
 > sudo apt install -y nala git neofetch lolcat cowsay fortune clamav chkrootkit rkhunter snapd flatpak tlp kate alsa-utils
