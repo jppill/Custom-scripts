@@ -2,7 +2,8 @@
 Scripts pour usage perso
 ________________________________________
 # Prérequis
-> Connaissance de base du terminal - SHELL
+> Connaissance de base du terminal - SHELL \
+> Suivre la «PROCÉDURE pour installer les scripts localement» plus bas
 ________________________________________
 
 ## [ALIAS](ALIAS)
@@ -24,9 +25,11 @@ ________________________________________
 ________________________________________
 
 # PROCÉDURE pour installer les scripts localement
-### La mise à jour des scripts est automatique en utilisant l'UPDATERjp (Option M du menu)
-ou en inscrivant dans le terminal:
-> cd ~/Documents/Github/ && git pull scripts-gh main && cd && hello
+### La mise à jour (sync) des scripts sera automatique en utilisant l'[UPDATERjp](UPDATERjp) (Option M du menu)
+**_alternative_** Inscrire manuellement dans le terminal:
+> cd ~/Documents/Github/ && git pull scripts-gh main && cd && hello \
+
+**_Ctrl+Shift+v pour coller dans le terminal_**
 ## Applications requise dans les scripts
 Inscrire dans le terminal:
 > sudo apt install -y nala git neofetch lolcat cowsay fortune clamav chkrootkit rkhunter snapd flatpak tlp kate alsa-utils
