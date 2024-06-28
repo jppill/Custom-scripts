@@ -24,7 +24,8 @@ ________________________________________
 ________________________________________
 
 # PROCÉDURE pour installer les scripts localement
-## La mise à jour des scripts est automatique en utilisant l'UPDATERjp (Option M du menu) ou en inscrivant dans le terminal:
+### La mise à jour des scripts est automatique en utilisant l'UPDATERjp (Option M du menu)
+ou en inscrivant dans le terminal:
 > cd ~/Documents/Github/ && git pull scripts-gh main && cd && hello
 ## Applications requise dans les scripts
 Inscrire dans le terminal:
