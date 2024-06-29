@@ -41,7 +41,8 @@ scriptjp="~/Documents/Github/update_apt_jp.sh" #Installer le script à cet endro
  
 afficher_menu(){
 	clear
-		echo $ENTETE
+		echo ""
+  		echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$GOLD          U P D A T E R j p           $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$CYAN            Gestion L I N U X         $highlight$RED   $CYAN   $GOLD   $nc"
 		echo $ENTETE
@@ -76,7 +77,8 @@ case $CHOIX in
 
 M|m) #MISE A JOUR
 	clear
-		echo $ENTETE
+		echo ""
+  		echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             MISE A JOUR              $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE            S Y S T E M E             $highlight$RED   $CYAN   $GOLD   $nc"
 		echo $ENTETE
@@ -137,9 +139,10 @@ M|m) #MISE A JOUR
 
 S|s) #Choix serveurs-vitesse
 	clear
-		echo $ENTETE
+		echo ""
+  		echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE           TEST DE VITESSE            $highlight$RED   $CYAN   $GOLD   $nc"
-		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE           S E R V E U R S             $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE           S E R V E U R S            $highlight$RED   $CYAN   $GOLD   $nc"
 		echo $ENTETE
 	sudo nala fetch
 ;;
