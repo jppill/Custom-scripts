@@ -44,7 +44,7 @@ afficher_menu(){
 		echo "" && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$GOLD          U P D A T E R j p           $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$CYAN            Gestion L I N U X         $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE
+		echo $ENTETE && echo ""
 		echo -e "$BLACK       S E C U R I T E                                $nc"
 		echo -e "$italic$CYAN[ M ]$nc $highlight$CYAN MAJ + nettoyage (NALA/APT-SNAP-FLATPAK) $nc"
 		echo -e "[ C ] Vérification ANTIVIRUS ClamAV"
