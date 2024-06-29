@@ -37,7 +37,7 @@ scriptjp="~/Documents/Github/update_apt_jp.sh" #Installer le script à cet endro
 #Mise-en-page
 	FAIT="-e $blink$GREEN    FAIT   $nc"
 	ENTER="-e $blink$YELLOW [ ENTER ] $nc"
-	ENTETE="-e $darkgreen ========================================================== $nc"
+	ENTETE="-e $darkgreen========================================================== $nc"
  
 afficher_menu(){
 	clear
