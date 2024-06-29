@@ -46,7 +46,7 @@ afficher_menu(){
 		echo -e "  $highlight$GOLD   $CYAN   $RED   $nc$CYAN            Gestion L I N U X         $highlight$RED   $CYAN   $GOLD   $nc"
 		echo $ENTETE
 		echo -e "$BLACK       S E C U R I T E                                $nc"
-		echo -e "$italic$CYAN[ M ]$nc $highlight$CYAN MAJ et nettoyage complète (NALA-APT - SNAP - FLATPAK) $nc"
+		echo -e "$italic$CYAN[ M ]$nc $highlight$CYAN MAJ + nettoyage (NALA/APT-SNAP-FLATPAK) $nc"
 		echo -e "[ C ] Vérification ANTIVIRUS ClamAV"
 		echo -e "[ ROOT ] #Vérification ROOTKIT [chkrootkit + rkhunter]"
   		echo -e ""
