@@ -42,8 +42,8 @@ scriptjp="~/Documents/Github/update_apt_jp.sh" #Installer le script à cet endro
 afficher_menu(){
 	clear
 		echo $ENTETE
-		echo -e "  $highlight$GOLD   $CYAN   $RED   $nc$GOLD     U P D A T E R j p Gestion L I N U X         $highlight$RED   $CYAN   $GOLD   $nc"
-		echo -e "  $highlight$GOLD   $CYAN   $RED   $nc$CYAN                     J  p             $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e "  $highlight$GOLD   $CYAN   $RED   $nc$GOLD          U P D A T E R j p           $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e "  $highlight$GOLD   $CYAN   $RED   $nc$CYAN            Gestion L I N U X         $highlight$RED   $CYAN   $GOLD   $nc"
 		echo $ENTETE
 		echo -e "$BLACK       S E C U R I T E                                $nc"
 		echo -e "$italic$CYAN[ M ]$nc $highlight$CYAN MAJ et nettoyage complète (NALA-APT - SNAP - FLATPAK) $nc"
