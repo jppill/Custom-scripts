@@ -76,12 +76,10 @@ case $CHOIX in
 
 M|m) #MISE A JOUR
 	clear
-		echo ""
-  		echo $ENTETE
+		echo "" && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             MISE A JOUR              $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE            S Y S T E M E             $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE
-  		echo ""
+		echo $ENTETE &&	echo ""
 		echo -e "$highlight$GREEN    update apt/nala     $nc"
 	sudo apt install nala
 	#sudo nala install
@@ -139,20 +137,19 @@ M|m) #MISE A JOUR
 
 S|s) #Choix serveurs-vitesse
 	clear
-		echo ""
-  		echo $ENTETE
+		echo "" && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE           TEST DE VITESSE            $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE           S E R V E U R S            $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE
-  		echo ""
+		echo $ENTETE && echo ""
 	sudo nala fetch
 ;;
 
 V|v) #NORDVPN
 	clear 
-		echo $ENTETE
-		echo -e "$highlight$GOLD                           NordVPN $nc"
-		echo $ENTETE
+		echo "" && echo $ENTETE
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
+		echo $ENTETE && echo ""
 	nordvpn version
 		echo ""
 	sudo systemctl start nordvpnd
@@ -208,6 +205,10 @@ V|v) #NORDVPN
     
 L|l) #liste Aliases
 	clear
+ 		echo "" && echo $ENTETE
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE               L I S T E              $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                    ALIAS             $highlight$RED   $CYAN   $GOLD   $nc"
+		echo $ENTETE &&	echo ""
 		echo -e "$DARKGREEN"
 		echo ""
 		echo ""
@@ -221,10 +222,10 @@ L|l) #liste Aliases
 
 D|d) #système de démarrage
 	clear
-		echo $ENTETE
-		echo -e "\e[93m      Démarrage par défault avec systemD ou sysVinit? "
-		echo $ENTETE
-		echo " "
+		echo "" && echo $ENTETE
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE      Demarrage par defaut avec       $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE        systemD ou sysVinit?          $highlight$RED   $CYAN   $GOLD   $nc"
+		echo $ENTETE && echo ""		
 		echo " ==> Que veux-tu faire?"
 		echo -e "\e[92m"
 		echo ""
@@ -267,11 +268,10 @@ D|d) #système de démarrage
 
 I|i) #info système
 	clear
-		echo $ENTETE
-		echo -e "\e[93m                     INFO SYSTÈME & AUTRE "
-		echo $ENTETE
-		echo " "
-		echo " " 
+  		echo "" && echo $ENTETE
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             I N F O SYSTEME          $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             &   A U T R E S          $highlight$RED   $CYAN   $GOLD   $nc"
+		echo $ENTETE &&	echo "" && echo " " 
 		echo "  ==> Quelles informations souhaites-tu obtenir?"
 		echo -e "\e[93m"
 		echo "      [ C ] layout CLAVIER actuel (en image interactive)"
@@ -295,10 +295,10 @@ I|i) #info système
 	i|I) #elif [ $answer = i ]
 	#then
 		clear
-   			echo $ENTETE
-			echo -e "\e[93m                  Info Système/batterie TLP "
-			echo -e "\e[93m                        (tlp-stat -s) "
-			echo $ENTETE
+			echo "" && echo $ENTETE
+			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE       Info Système/batterie TLP      $highlight$RED   $CYAN   $GOLD   $nc"
+			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE            (tlp-stat -s)             $highlight$RED   $CYAN   $GOLD   $nc"
+			echo $ENTETE &&	echo ""		
 		sudo nala install tlp
   		sudo tlp-stat -s # état système et batterie
 			echo ""
@@ -313,7 +313,11 @@ I|i) #info système
 ;;
 
 R|r) #REDSHIFT
-		echo "Redshift"
+			echo "" && echo $ENTETE
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE               REDSHIFT               $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                                      $highlight$RED   $CYAN   $GOLD   $nc"
+		echo $ENTETE &&	echo ""	
+  	echo "Redshift"
 	kate /home/jp/.config/redshift.conf
 ;;
 
@@ -323,10 +327,10 @@ A|a) # SON
 
 W|w) #WIFI
 	clear
-		echo $ENTETE
-		echo -e "\e[93m                        Gestion WIFI "
-		echo $ENTETE
-		echo " "
+  		echo "" && echo $ENTETE
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE              G E S T I O N           $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE              W   I   F   I           $highlight$RED   $CYAN   $GOLD   $nc"
+		echo $ENTETE &&	echo "" && echo " " 		
 		echo " ==> Que veux-tu faire?"
 		echo -e "\e[92m"
 		echo "       [ 1 ]  INFOS réseau              [CTRL+C pour revenir du rapport]"
@@ -376,10 +380,13 @@ W|w) #WIFI
 
 ROOT|root) #ROOTKIT
 	clear
-		echo $ENTETE
-		echo -e "\e[93m                   Vérification ROOTKIT "
+		echo "" && echo $ENTETE
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE         Verification ROOTKIT         $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                                      $highlight$RED   $CYAN   $GOLD   $nc"
+		echo $ENTETE &&	echo ""
+  	
 		echo -e "\e[93m                  (chkrootkit + rkhunter) "
-		echo $ENTETE
+		
 	sudo chkrootkit
 	#sudo rkhunter -V --versioncheck
 	sudo rkhunter --check --sk
@@ -390,10 +397,13 @@ ROOT|root) #ROOTKIT
 
 C|c) #CLAMSHELL - ANTIVIRUS
 	clear
-		echo $ENTETE
-		echo -e "\e[93m                   Vérification Antivirus "
+  		echo "" && echo $ENTETE
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE       Verification ANTIvirus         $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                                      $highlight$RED   $CYAN   $GOLD   $nc"
+		echo $ENTETE &&	echo ""
+  
 		echo -e "\e[93m                          (ClamAV) "
-		echo $ENTETE
+		
 		echo 'sudo freshclam'
 	sudo freshclam
 	#sudo wget https://database.clamav.net/daily.cvd
@@ -408,10 +418,10 @@ C|c) #CLAMSHELL - ANTIVIRUS
 
 COW|cow) #COWSAY ET FORTUNE
 	clear
-		echo $ENTETE
-		echo -e "\e[93m                           C O W S A Y "
-		echo $ENTETE
-		echo " "
+		echo "" && echo $ENTETE
+  		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE               C O W S A Y            $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                                      $highlight$RED   $CYAN   $GOLD   $nc"		
+  		echo $ENTETE &&	echo ""
 		echo " ==> Que veux-tu faire?"
 		echo -e "\e[92m"
 		echo ""
