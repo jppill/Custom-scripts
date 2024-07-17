@@ -32,6 +32,11 @@ ___
 **_rappel: Ctrl+Shift+v pour coller dans le terminal_**
 ## Applications requise dans les scripts
 Inscrire dans le terminal:
+
+```sh
+sudo apt install -y nala git neofetch lolcat cowsay fortune clamav chkrootkit rkhunter snapd flatpak tlp kate alsa-utils
+```
+
 > `sudo apt install -y nala git neofetch lolcat cowsay fortune clamav chkrootkit rkhunter snapd flatpak tlp kate alsa-utils`
 
 ## Installer git sur Linux
