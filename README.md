@@ -7,13 +7,15 @@ ___
 ___
 
 ## [ALIAS](ALIAS)  [^1]
-[^1]: cliquez ici [ALIAS](ALIAS)
+[^1]: cliquez ici => [ALIAS](ALIAS)
 > Liste d'alias a installer manuellement selon les instructions
 
-## [REINSTALLATION](REINSTALLATION)
+## [REINSTALLATION](REINSTALLATION)  [^2]
+[^2]: cliquez ici => [REINSTALLATION](REINSTALLATION)
 > Pour bien partir une nouvelle installation de type DEBIAN - Linux
 
-## [UPDATERjp](UPDATERjp)
+## [UPDATERjp](UPDATERjp)  [^3]
+[^3]: cliquez ici => [UPDATERjp](UPDATERjp)
 > Gestionnaire Linux Debian via terminal pour mise a jour (APT/NALA-SNAP-FLATPAK) et autres options pratiques
 >   - APT/NALA SNAP FLATPAK
 >   - ClamAV antivirus + ROOTkit
