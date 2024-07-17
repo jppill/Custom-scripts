@@ -76,15 +76,12 @@ cd ~/Documents/Github/ && git pull scripts-gh main && cd \
 > ```
 ---
 ### Autres configurations optionnelles
-1.
 ```sh
   git config --global user.name "*your_name*
 ```
-2.
 ```sh
   git config --global user.email "*your_email*"
 ```
-3.
 ```sh
   git config --global --list
 ```
