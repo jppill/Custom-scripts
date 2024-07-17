@@ -6,15 +6,15 @@ ___
 > Suivre la «PROCÉDURE pour installer les scripts localement» plus bas
 ___
 
-## [ALIAS](ALIAS)  [^1]
+## [ALIAS](ALIAS)  *[^1]*
 [^1]: cliquez ici => [ALIAS](ALIAS)
 > Liste d'alias a installer manuellement selon les instructions
 
-## [REINSTALLATION](REINSTALLATION)  [^2]
+## [REINSTALLATION](REINSTALLATION)  *[^2]*
 [^2]: cliquez ici => [REINSTALLATION](REINSTALLATION)
 > Pour bien partir une nouvelle installation de type DEBIAN - Linux
 
-## [UPDATERjp](UPDATERjp)  [^3]
+## [UPDATERjp](UPDATERjp)  *[^3]*
 [^3]: cliquez ici => [UPDATERjp](UPDATERjp)
 > Gestionnaire Linux Debian via terminal pour mise a jour (APT/NALA-SNAP-FLATPAK) et autres options pratiques
 >   - APT/NALA SNAP FLATPAK
@@ -37,7 +37,7 @@ Inscrire dans le terminal:
 ## Installer git sur Linux
 > sudo apt install git -y
 
-## Comment relier **_GIT_** et **_Linux_** *[^4]*
+## Comment relier **_GIT_** et **_Linux_**  *[^4]*
 [^4]: [www.freecodecamp.org](https://www.freecodecamp.org/news/create-and-sync-git-and-github-repositories/)
 - Création d'un dossier «Github» dans Documents:
 > ./Documents/Github/
