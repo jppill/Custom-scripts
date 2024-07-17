@@ -8,15 +8,15 @@ ___
 
 ## [ALIAS](ALIAS)  *[^1]*
 [^1]: cliquez ici => [ALIAS](ALIAS)
-> Liste d'alias a installer manuellement selon les instructions
+Liste d'alias a installer manuellement selon les instructions
 
 ## [REINSTALLATION](REINSTALLATION)  *[^2]*
 [^2]: cliquez ici => [REINSTALLATION](REINSTALLATION)
-> Pour bien partir une nouvelle installation de type DEBIAN - Linux
+Pour bien partir une nouvelle installation de type DEBIAN - Linux
 
 ## [UPDATERjp](UPDATERjp)  *[^3]*
 [^3]: cliquez ici => [UPDATERjp](UPDATERjp)
-> Gestionnaire Linux Debian via terminal pour mise a jour (APT/NALA-SNAP-FLATPAK) et autres options pratiques
+Gestionnaire Linux Debian via terminal pour mise a jour (APT/NALA-SNAP-FLATPAK) et autres options pratiques
 >   - APT/NALA SNAP FLATPAK
 >   - ClamAV antivirus + ROOTkit
 >   - Nord VPN
@@ -32,7 +32,7 @@ ___
 **_rappel: Ctrl+Shift+v pour coller dans le terminal_**
 ## Applications requise dans les scripts
 Inscrire dans le terminal:
-> `sudo apt install -y nala git neofetch lolcat cowsay fortune clamav chkrootkit rkhunter snapd flatpak tlp kate alsa-utils`
+ `sudo apt install -y nala git neofetch lolcat cowsay fortune clamav chkrootkit rkhunter snapd flatpak tlp kate alsa-utils`
 
 ## Installer git sur Linux
 > `sudo apt install git -y`
