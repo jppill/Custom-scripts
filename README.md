@@ -2,10 +2,11 @@
 Scripts pour usage perso
 ___
 # Prérequis
-> Connaissance de base du terminal - SHELL \
+Connaissance de base du terminal - SHELL \
 > Suivre la «PROCÉDURE pour installer les scripts localement» plus bas
 ___
 
+# Description des Scripts inclus
 ## [ALIAS](ALIAS)  *[^1]*
 [^1]: cliquez ici => [ALIAS](ALIAS)
 > Liste d'alias a installer manuellement selon les instructions
@@ -69,17 +70,19 @@ git remote
 cd ~/Documents/Github/ && git pull scripts-gh main && cd \
 ```
   
-  Pour la première mise à jour, à ajouter à la fin de la commande **_pull_**
-  > --allow-unrelated-histories \
+  - Pour la première mise à jour, à ajouter à la fin de la commande **_pull_**
+   ```sh
+  --allow-unrelated-histories \
+  ```
 ---
 ### Autres configurations optionnelles
-```sh
+- ```sh
 git config --global user.name "*your_name*
 ```
-```sh
+- ```sh
 git config --global user.email "*your_email*"
 ```
-```sh
+- ```sh
 git config --global --list
 ```
 ---
