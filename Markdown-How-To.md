@@ -109,12 +109,12 @@ X^2^
 ---
 ### Fenced Code Block
 > ```
-{
-"firstName": "John",
-"lastName": "Smith",
-"age": 25
-}
-```
+> {
+> "firstName": "John",
+> "lastName": "Smith",
+> "age": 25
+> }
+> ```
 ```
 {
 "firstName": "John",
