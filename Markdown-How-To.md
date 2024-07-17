@@ -1,11 +1,17 @@
 # Markdown
 #### Titre
 > #H1
+```
 #H1
+```
 > ##H2
+```
 ##H2
+```
 > ###H3
+```
 ###H3
+```
 
 > **bold text** __bold text__
 ```
@@ -48,8 +54,8 @@ X^2^
 ---
 ### Ordered List
 > 1. First item
-2. Second item
-3. Third item
+> 2. Second item
+> 3. Third item
 ```
 1. First item
 2. Second item
@@ -57,9 +63,9 @@ X^2^
 ```
 ---
 ### Unordered List
-- First item
-- Second item
-- Third item
+> - First item
+> - Second item
+> - Third item
 ```
 - First item
 - Second item
