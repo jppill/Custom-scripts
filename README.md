@@ -6,7 +6,8 @@ ___
 > Suivre la «PROCÉDURE pour installer les scripts localement» plus bas
 ___
 
-## [ALIAS](ALIAS) ###### **_(cliquez)_**
+## ALIAS [^1]
+[^1] [ALIAS](ALIAS)
 > Liste d'alias a installer manuellement selon les instructions
 
 ## [REINSTALLATION](REINSTALLATION)
