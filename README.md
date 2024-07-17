@@ -65,8 +65,5 @@ Inscrire dans le terminal:
 ### La mise à jour (sync) des scripts sera automatique en utilisant l'[UPDATERjp](UPDATERjp) (Option M du menu)
 **_alternative_** Inscrire manuellement dans le terminal:
 > cd ~/Documents/Github/ && git pull scripts-gh main && cd && hello \
-
-
-\[1]: *https://www.freecodecamp.org/news/create-and-sync-git-and-github-repositories/*
 ---
 ***
