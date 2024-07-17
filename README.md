@@ -67,3 +67,5 @@ Inscrire dans le terminal:
 
 
 \[1]: *https://www.freecodecamp.org/news/create-and-sync-git-and-github-repositories/*
+---
+***
