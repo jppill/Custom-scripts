@@ -25,9 +25,6 @@ ________________________________________
 ________________________________________
 
 # PROCÉDURE pour installer les scripts localement
-### La mise à jour (sync) des scripts sera automatique en utilisant l'[UPDATERjp](UPDATERjp) (Option M du menu)
-**_alternative_** Inscrire manuellement dans le terminal:
-> cd ~/Documents/Github/ && git pull scripts-gh main && cd && hello \
 
 **_rappel: Ctrl+Shift+v pour coller dans le terminal_**
 ## Applications requise dans les scripts
@@ -59,6 +56,10 @@ Inscrire dans le terminal:
 - git config --global user.name "*your_name*"
 - git config --global user.email "*your_email*"
 - git config --global --list
+---
+### La mise à jour (sync) des scripts sera automatique en utilisant l'[UPDATERjp](UPDATERjp) (Option M du menu)
+**_alternative_** Inscrire manuellement dans le terminal:
+> cd ~/Documents/Github/ && git pull scripts-gh main && cd && hello \
 
-  
+
 \[1]: *https://www.freecodecamp.org/news/create-and-sync-git-and-github-repositories/*
