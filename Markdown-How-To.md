@@ -1,4 +1,5 @@
 # Markdown
+#### Titre
 #H1
 ##H2
 ###H3
@@ -9,16 +10,16 @@
 
 ***bold and italic text*** ___bold and italic text___
 
-###highlight
+### Highlight
 ==very important words==.
 
-###Subscript 
+### Subscript 
 H~2~O
 
-###Superscript 
+### Superscript 
 X^2^
 
-###Citation
+### Citation
 > blockquote
 
 ### Ordered List
