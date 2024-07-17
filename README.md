@@ -69,22 +69,25 @@ git remote
 ```sh
 cd ~/Documents/Github/ && git pull scripts-gh main && cd \
 ```
-  
-  - Pour la première mise à jour, à ajouter à la fin de la commande **_pull_**
-  - ```sh
-    --allow-unrelated-histories
-    ```
+
+> Pour la première mise à jour, à ajouter à la fin de la commande **_pull_**
+> ```sh
+> --allow-unrelated-histories
+> ```
 ---
 ### Autres configurations optionnelles
-1. ```sh
+1.
+```sh
   git config --global user.name "*your_name*
-    ```
-2. ```sh
+```
+2.
+```sh
   git config --global user.email "*your_email*"
-    ```
-3. ```sh
+```
+3.
+```sh
   git config --global --list
-    ```
+```
 ---
 ### La mise à jour (sync) des scripts sera automatique en utilisant l'[UPDATERjp](UPDATERjp) (Option M du menu)
 **_alternative_** Inscrire manuellement dans le terminal:
