@@ -62,12 +62,12 @@ git remote add scripts-gh https://github.com/jppill/Custom-scripts.git
 git remote
 ```
 
-- Faire venir les fichiers de Github dans le dossier local Github avec la fonction PULL
-  **_La commande suivante s'inscrit dans le terminal, t'amène dans le bon répertoire, met a jour, puis retourne dans le répertoire initial_**
+- Faire venir les fichiers de Github dans le dossier local Github avec la fonction PULL \
+  *La commande suivante s'inscrit dans le terminal, t'amène dans le bon répertoire, met a jour, puis retourne dans le répertoire initial*
   
-  ```sh
-  cd ~/Documents/Github/ && git pull scripts-gh main && cd \
-  ```
+```sh
+cd ~/Documents/Github/ && git pull scripts-gh main && cd \
+```
   
   Pour la première mise à jour, à ajouter à la fin de la commande **_pull_**
   > --allow-unrelated-histories \
