@@ -29,7 +29,7 @@
 ```
 ---
 ```sh
-test ```sh
+test ```sh cd ls apt update sudo
 ```
 ---
 ### Highlight (parfois non supporté) 
