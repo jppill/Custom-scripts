@@ -99,12 +99,15 @@ Here's a sentence with a footnote. [^1]
 term
 : definition
 ```
-
+> term
+: definition
+---
 ### Strikethrough
 ```
 ~~The world is flat.~~
 ```
-
+> ~~The world is flat.~~
+---
 ### Task List
 ```
 - [x] Write the press release
@@ -114,13 +117,13 @@ term
 > - [x] Write the press release
 > - [ ] Update the website
 > - [ ] Contact the media
-
+---
 ### Emoji
 ```
 That is so funny! :joy:
 ```
-That is so funny! :joy:
-
+> That is so funny! :joy:
+---
 (See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
 
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
