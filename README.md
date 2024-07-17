@@ -1,10 +1,10 @@
 # Regroupement de scripts de jppill
 Scripts pour usage perso
-________________________________________
+___
 # Prérequis
 > Connaissance de base du terminal - SHELL \
 > Suivre la «PROCÉDURE pour installer les scripts localement» plus bas
-________________________________________
+___
 
 ## [ALIAS](ALIAS)
 > Liste d'alias a installer manuellement selon les instructions
@@ -22,7 +22,7 @@ ________________________________________
 >   - Modif système de démarrage: Systemd ou sysVinit
 >   - Info système et batterie
 >   - Cowsay pour s'amuser avec le terminal
-________________________________________
+___
 
 # PROCÉDURE pour installer les scripts localement
 
@@ -52,7 +52,8 @@ Inscrire dans le terminal:
   
   Pour la première mise à jour, à ajouter à la fin de la commande **_pull_**
   > --allow-unrelated-histories \
-
+---
+### Autres configurations optionnelles
 - git config --global user.name "*your_name*"
 - git config --global user.email "*your_email*"
 - git config --global --list
