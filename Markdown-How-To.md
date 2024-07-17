@@ -28,19 +28,19 @@
 ***bold and italic text*** ___bold and italic text___
 ```
 ---
-### Highlight
-> == very important words ==
+### Highlight (parfois non supporté) 
+> ==very important words==
 ```
 ==very important words==
 ```
 ---
-### Subscript 
+### Subscript (parfois non supporté)
 > H~2~O
 ```
 H~2~O
 ```
 ---
-### Superscript 
+### Superscript (parfois non supporté)
 > X^2^
 ```
 X^2^
