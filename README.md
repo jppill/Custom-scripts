@@ -3,7 +3,7 @@ Scripts pour usage perso
 ___
 # Prérequis
 Connaissance de base du terminal - SHELL \
-> Suivre la «PROCÉDURE pour installer les scripts localement» plus bas
+> Suivre la *«PROCÉDURE pour installer les scripts localement»* plus bas
 ___
 
 # Description des Scripts inclus
@@ -70,9 +70,9 @@ git remote
 cd ~/Documents/Github/ && git pull scripts-gh main && cd \
 ```
   
-  -- Pour la première mise à jour, à ajouter à la fin de la commande **_pull_**
-   ```sh
-  --allow-unrelated-histories \
+-  Pour la première mise à jour, à ajouter à la fin de la commande **_pull_**
+  ```sh
+  --allow-unrelated-histories
   ```
 ---
 ### Autres configurations optionnelles
