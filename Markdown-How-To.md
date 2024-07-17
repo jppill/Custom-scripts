@@ -1,18 +1,18 @@
 # Markdown
 #### Titre
-> #H1
+#H1
 ```
 #H1
 ```
-> ##H2
+##H2
 ```
 ##H2
 ```
-> ###H3
+###H3
 ```
 ###H3
 ```
-
+---
 > **bold text** __bold text__
 ```
 **bold text** __bold text__
