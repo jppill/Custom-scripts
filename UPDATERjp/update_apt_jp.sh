@@ -236,9 +236,7 @@ V|v|n|N) #NORDVPN
 	;;
 	
 	*)
- 		exit
-   	clear
-    	$updater
+ 		break
     	
 	;;
 	esac
