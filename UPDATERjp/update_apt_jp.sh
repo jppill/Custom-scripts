@@ -1,7 +1,7 @@
 #!/bin/bash
 # immulator : https://repl.it/repls/DarkgreyMustyEmulation#main.sh
 #source ~/.bashrc
-scriptjp="~/Documents/Github/update_apt_jp.sh" #Installer le script à cet endroit
+updater="~/Documents/Github/update_apt_jp.sh" #Installer le script à cet endroit
 #Couleurs - Liste couleurs sur bash: https://misc.flogisoft.com/bash/tip_colors_and_formatting
 	black='\e[0;4m' #noir
 	BLACK='\e[1;4m' #noir GRAS
@@ -237,6 +237,9 @@ V|v|n|N) #NORDVPN
 	
 	*)
  		exit
+   	clear
+    	$updater
+    	
 	;;
 	esac
 	done
