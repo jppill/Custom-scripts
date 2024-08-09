@@ -174,6 +174,7 @@ V|v|n|N) #NORDVPN
 		}
 	while true; do
 		afficher_menuvpn
+  		echo ""
 		read -p "Choix: " answer
  
 	case $answer in
@@ -235,9 +236,10 @@ V|v|n|N) #NORDVPN
 	;;
 	
 	*)
+ 	done
 	;;
 	esac
-	done
+	#done
 ;;
     
 L|l) #liste Aliases
