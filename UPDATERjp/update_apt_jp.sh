@@ -219,7 +219,6 @@ V|v|n|N) #NORDVPN
 		;;
 	
 		esac
-  		done
 	;;
 	
 	#n|N)
