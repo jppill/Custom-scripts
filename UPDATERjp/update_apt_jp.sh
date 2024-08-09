@@ -153,7 +153,7 @@ V|v|n|N) #NORDVPN
 	nordvpn version
 	nordvpn account
 		echo "" 	
-	 sudo systemctl start nordvpnd
+	sudo systemctl start nordvpnd
 	nordvpn settings
 		echo $ENTER
 	read victor
@@ -164,13 +164,12 @@ V|v|n|N) #NORDVPN
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
 			echo $ENTETE && echo ""
 			echo " "
-   			echo "      [ O ou C ] Lancement de la Connection Nordvpn"
-	 		echo "      [ D ] Déconnection"
-    			echo -e " $italic     [ ENTER ] Retour au menu précédent $nc"
-       			echo ""
 	  	nordvpn version
 		nordvpn status
-		
+    			echo "      [ O ou C ] Lancement de la Connection Nordvpn"
+	 		echo "      [ D ] Déconnection"
+    			echo -e " $italic     [ ENTER ] Retour au menu précédent $nc"
+       			echo ""		
 		}
 	while true; do
 		afficher_menuvpn
