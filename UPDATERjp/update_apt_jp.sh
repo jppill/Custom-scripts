@@ -64,6 +64,7 @@ afficher_menu(){
   		echo -e ""
 		echo -e "$BLACK       A U T R E                                      $nc"
 		echo -e "[ COW ] COWSAY game"
+  		echo ""
 		echo -e "$PURPLE[ Q ] QUITTER $italic ou juste appuyer [enter] $nc"
 		echo ""
 	}
