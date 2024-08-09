@@ -53,6 +53,7 @@ afficher_menu(){
 		echo -e "$BLACK       P A R A M E T R E S                            $nc"
 		echo -e "[ V ou N ] Vérification et démarrage NORDVPN"
 		echo -e "[ W ] Gestion WIFI"
+  		echo -e "[ S ] Test vitesse internet "
 		echo -e "$italic$CYAN[ S ]$nc $highlight$BLUE Test de vitesse et choix serveur MAJ-NALA $nc"
 		echo -e "[ A ] ALSAMIXER (ajuste son du terminal)"
 		echo -e "[ D ] Systemd ou sysVinit [choix système de démarrage]" 
@@ -404,6 +405,11 @@ W|w) #WIFI
 	esac
 ;;
 
+S|s) #test vitesse internet
+	sudo speedtest --bytes
+
+;; 
+
 ROOT|root) #ROOTKIT
 	clear
 		echo "" && echo $ENTETE
@@ -417,7 +423,7 @@ ROOT|root) #ROOTKIT
 	#sudo rkhunter -V --versioncheck
 	sudo rkhunter --check --sk
 		echo $FAIT
-		echo $ENTER
+		echo $ENTER 
 		read romeo
 ;;
 
