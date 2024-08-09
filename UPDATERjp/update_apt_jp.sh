@@ -172,7 +172,7 @@ V|v) #NORDVPN
 		
 	case $answer in
 	
-	o|O)
+	o|O|c|C)
 		sudo nordvpn c
 		sudo nordvpn status
 			echo $FAIT
