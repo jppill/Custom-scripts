@@ -151,8 +151,10 @@ V|v|n|N) #NORDVPN
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
 		echo $ENTETE && echo ""
 	nordvpn version
-		echo ""
-	sudo systemctl start nordvpnd
+		echo ""  
+	nordvpn account
+		echo "" 	
+	 sudo systemctl start nordvpnd
 	nordvpn settings
 		echo $ENTER
 	read victor
@@ -163,13 +165,11 @@ V|v|n|N) #NORDVPN
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
 			echo $ENTETE && echo ""
 		nordvpn version
-			echo ""   
-		nordvpn account
-			echo ""
 		nordvpn status
 			echo " "
-			echo "  ==> Lancement de la connection nordvpn? [o/n/d]"
-			echo "      (oui,non,disconnect)"
+   			echo "      [ O ou C ] Lancement de la Connection Nordvpn"
+	 		echo "      [ D ] Déconnection"
+    			echo "      [ enter ] Retour au menu précédent"
 		
 		}
 	while true; do
@@ -188,6 +188,7 @@ V|v|n|N) #NORDVPN
 			echo "      [ 1 ] Le plus rapide"
    			echo "      [ C ] Canada - CAN"
       			echo "      [ E ou U ] États-Unis - USA"
+	   		echo "      [ enter ] Retour au menu précédent"
 		read -p "Choix: " country
   		case $country in
 
@@ -234,7 +235,6 @@ V|v|n|N) #NORDVPN
 	;;
 	
 	*)
- 		exit
 	;;
 	esac
 	done
