@@ -219,6 +219,7 @@ V|v|n|N) #NORDVPN
 		;;
 	
 		esac
+  		done
 	;;
 	
 	#n|N)
@@ -236,10 +237,9 @@ V|v|n|N) #NORDVPN
 	;;
 	
 	*)
- 	done
 	;;
 	esac
-	#done
+	done
 ;;
     
 L|l) #liste Aliases
