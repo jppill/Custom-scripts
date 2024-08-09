@@ -414,6 +414,7 @@ S|s|VIT|vit) #test vitesse internet
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             I N T E R N E T          $highlight$RED   $CYAN   $GOLD   $nc"
 		echo $ENTETE &&	echo ""
 	sudo speedtest --bytes
+ 	speedtest #bit
 		echo $ENTER 
 		read sierra
 
