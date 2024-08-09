@@ -169,7 +169,7 @@ V|v|n|N) #NORDVPN
   			echo ""
     			echo "      [ O ou C ] Lancement de la Connection Nordvpn"
 	 		echo "      [ D ] Déconnection"
-    			echo -e " $italic     [ ENTER ] Retour au menu PRINCIPAL $nc"
+    			echo -e " $PURPLE$italic     [ ENTER ] Retour au menu PRINCIPAL $nc"
        			echo ""		
 		}
 	while true; do
@@ -189,7 +189,8 @@ V|v|n|N) #NORDVPN
 			echo "      [ 1 ] Le plus rapide"
    			echo "      [ C ] Canada - CAN"
       			echo "      [ E ou U ] États-Unis - USA"
-	   		echo -e " $italic     [ ENTER ] Retour au menu NordVPN $nc"
+	   		echo -e " $PURPLE$italic     [ ENTER ] Retour au menu NordVPN $nc"
+      			echo ""
 		read -p "Choix: " country
   		case $country in
 
@@ -198,6 +199,7 @@ V|v|n|N) #NORDVPN
 			sudo nordvpn status
 				echo $FAIT
 				echo $ENTER
+    				echo -e "$italic$yellow Retour au Menu NordVPN $nc"
 			read victor
 		;;
   		C|c|CAN|can)
@@ -205,6 +207,7 @@ V|v|n|N) #NORDVPN
 			sudo nordvpn status
 				echo $FAIT
 				echo $ENTER
+    				echo -e "$italic$yellow Retour au Menu NordVPN $nc"
 			read victor
       		;;
 		U|c|E|e|usa|USA)
@@ -212,6 +215,7 @@ V|v|n|N) #NORDVPN
 			sudo nordvpn status
 				echo $FAIT
 				echo $ENTER
+    				echo -e "$italic$yellow Retour au Menu NordVPN $nc"
 			read victor
   		;;
     
