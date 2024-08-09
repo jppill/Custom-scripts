@@ -157,9 +157,10 @@ V|v|n|N) #NORDVPN
 		echo $ENTER
 	read victor
 	clear 
-		echo $ENTETE
-		echo -e "$GOLD                           NordVPN $nc"
-		echo $ENTETE
+		echo "" && echo $ENTETE
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
+		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
+		echo $ENTETE && echo ""
 	nordvpn version
 		echo ""   
 	nordvpn account
@@ -174,9 +175,10 @@ V|v|n|N) #NORDVPN
 	
 	O|o|C|c)
 		clear 
-			echo $ENTETE
-			echo -e "$GOLD                           NordVPN $nc"
-			echo $ENTETEecho " "
+			echo "" && echo $ENTETE
+			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
+			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
+			echo $ENTETE && echo ""
 			echo "  ==> Connection serveur de quel pays?"
 			echo "      [ 1 ] Le plus rapide"
    			echo "      [ C ] Canada - CAN"
