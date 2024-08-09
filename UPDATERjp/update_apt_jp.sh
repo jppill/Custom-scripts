@@ -199,7 +199,7 @@ V|v|n|N) #NORDVPN
 			sudo nordvpn status
 				echo $FAIT
 				echo $ENTER
-    				echo -e "$italic$yellow Retour au Menu NordVPN $nc"
+    				echo -e "$italic$YELLOW Retour au Menu NordVPN $nc"
 			read victor
 		;;
   		C|c|CAN|can)
@@ -207,7 +207,7 @@ V|v|n|N) #NORDVPN
 			sudo nordvpn status
 				echo $FAIT
 				echo $ENTER
-    				echo -e "$italic$yellow Retour au Menu NordVPN $nc"
+    				echo -e "$italic$YELLOW Retour au Menu NordVPN $nc"
 			read victor
       		;;
 		U|c|E|e|usa|USA)
@@ -215,7 +215,7 @@ V|v|n|N) #NORDVPN
 			sudo nordvpn status
 				echo $FAIT
 				echo $ENTER
-    				echo -e "$italic$yellow Retour au Menu NordVPN $nc"
+    				echo -e "$italic$YELLOW Retour au Menu NordVPN $nc"
 			read victor
   		;;
     
