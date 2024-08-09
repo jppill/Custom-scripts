@@ -166,9 +166,10 @@ V|v|n|N) #NORDVPN
 			echo " "
 	  	nordvpn version
 		nordvpn status
+  			echo ""
     			echo "      [ O ou C ] Lancement de la Connection Nordvpn"
 	 		echo "      [ D ] Déconnection"
-    			echo -e " $italic     [ ENTER ] Retour au menu précédent $nc"
+    			echo -e " $italic     [ ENTER ] Retour au menu PRINCIPAL $nc"
        			echo ""		
 		}
 	while true; do
@@ -188,7 +189,7 @@ V|v|n|N) #NORDVPN
 			echo "      [ 1 ] Le plus rapide"
    			echo "      [ C ] Canada - CAN"
       			echo "      [ E ou U ] États-Unis - USA"
-	   		echo -e " $italic     [ ENTER ] Retour au menu PRINCIPAL $nc"
+	   		echo -e " $italic     [ ENTER ] Retour au menu NordVPN $nc"
 		read -p "Choix: " country
   		case $country in
 
