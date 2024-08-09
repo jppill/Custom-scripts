@@ -163,7 +163,6 @@ V|v|n|N) #NORDVPN
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
 			echo $ENTETE && echo ""
-			echo " "
 	  	nordvpn version
 		nordvpn status
   			echo ""
