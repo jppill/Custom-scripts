@@ -234,6 +234,7 @@ V|v|n|N) #NORDVPN
 	;;
 	
 	*)
+ 		exit
 	;;
 	esac
 	
