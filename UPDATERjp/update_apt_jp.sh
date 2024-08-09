@@ -144,6 +144,8 @@ N|a|NALA|nala) #Choix serveurs NALA -vitesse
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE           S E R V E U R S            $highlight$RED   $CYAN   $GOLD   $nc"
 		echo $ENTETE && echo ""
 	sudo nala fetch
+ 		echo $ENTER
+	read november
 ;;
 
 V|v|n|N) #NORDVPN
@@ -412,6 +414,8 @@ S|s|VIT|vit) #test vitesse internet
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             I N T E R N E T          $highlight$RED   $CYAN   $GOLD   $nc"
 		echo $ENTETE &&	echo ""
 	sudo speedtest --bytes
+		echo $ENTER 
+		read sierra
 
 ;; 
 
