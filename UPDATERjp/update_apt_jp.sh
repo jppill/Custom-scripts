@@ -145,7 +145,7 @@ S|s) #Choix serveurs-vitesse
 ;;
 
 V|v|n|N) #NORDVPN
-	clear 
+		clear 
 		echo "" && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
@@ -156,21 +156,26 @@ V|v|n|N) #NORDVPN
 	nordvpn settings
 		echo $ENTER
 	read victor
-	clear 
-		echo "" && echo $ENTETE
-		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
-		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE && echo ""
-	nordvpn version
-		echo ""   
-	nordvpn account
-		echo ""
-	nordvpn status
-		echo " "
-		echo "  ==> Lancement de la connection nordvpn? [o/n/d]"
-		echo "      (oui,non,disconnect)"
-		read -p "Choix: " answer
+ 	afficher_menuvpn(){	
+		clear 
+			echo "" && echo $ENTETE
+			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
+			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
+			echo $ENTETE && echo ""
+		nordvpn version
+			echo ""   
+		nordvpn account
+			echo ""
+		nordvpn status
+			echo " "
+			echo "  ==> Lancement de la connection nordvpn? [o/n/d]"
+			echo "      (oui,non,disconnect)"
 		
+		}
+	while true; do
+		afficher_menuvpn
+		read -p "Choix: " answer
+ 
 	case $answer in
 	
 	O|o|C|c)
