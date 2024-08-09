@@ -51,7 +51,7 @@ afficher_menu(){
 		echo -e "[ ROOT ] #Vérification ROOTKIT [chkrootkit + rkhunter]"
   		echo -e ""
 		echo -e "$BLACK       P A R A M E T R E S                            $nc"
-		echo -e "[ V ] Vérification et démarrage NORDVPN"
+		echo -e "[ V ou N ] Vérification et démarrage NORDVPN"
 		echo -e "[ W ] Gestion WIFI"
 		echo -e "$italic$CYAN[ S ]$nc $highlight$BLUE Test de vitesse et choix serveur MAJ-NALA $nc"
 		echo -e "[ A ] ALSAMIXER (ajuste son du terminal)"
@@ -144,7 +144,7 @@ S|s) #Choix serveurs-vitesse
 	sudo nala fetch
 ;;
 
-V|v) #NORDVPN
+V|v|n|N) #NORDVPN
 	clear 
 		echo "" && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
@@ -172,12 +172,15 @@ V|v) #NORDVPN
 		
 	case $answer in
 	
-	o|O|c|C)
-			echo " "
+	O|o|C|c)
+		clear 
+			echo $ENTETE
+			echo -e "$GOLD                           NordVPN $nc"
+			echo $ENTETEecho " "
 			echo "  ==> Connection serveur de quel pays?"
-			echo "      1) Le plus rapide"
-   			echo "      C) Canada - CAN"
-      			echo "      E) États-Unis - USA"
+			echo "      [ 1 ] Le plus rapide"
+   			echo "      [ C ] Canada - CAN"
+      			echo "      [ E ou U ] États-Unis - USA"
 		read -p "Choix: " country
   		case $country in
 
@@ -188,14 +191,14 @@ V|v) #NORDVPN
 				echo $ENTER
 			read victor
 		;;
-  		c|C|can|CAN)
+  		C|c|CAN|can)
   			sudo nordvpn c Canada
 			sudo nordvpn status
 				echo $FAIT
 				echo $ENTER
 			read victor
       		;;
-		u|U|e|E|usa|USA)
+		U|c|E|e|usa|USA)
     			sudo nordvpn c United_States
 			sudo nordvpn status
 				echo $FAIT
@@ -213,7 +216,7 @@ V|v) #NORDVPN
 		#continue
 	#;;
 	
-	d|D) #elif [ $answer = d ]
+	D|d) #elif [ $answer = d ]
 		#then
 		sudo nordvpn d
 		sudo nordvpn status
