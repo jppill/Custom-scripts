@@ -237,7 +237,7 @@ V|v|n|N) #NORDVPN
  		exit
 	;;
 	esac
-	
+	done
 ;;
     
 L|l) #liste Aliases
@@ -396,7 +396,7 @@ W|w) #WIFI
 		nmcli device show
 			echo $FAIT
 		read whisky
-;;
+	;;
 
 	"3") #elif [ $answer -eq 3 ]
 	#then
