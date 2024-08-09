@@ -236,6 +236,7 @@ V|v|n|N) #NORDVPN
 	;;
 	
 	*)
+ 		false
 	;;
 	esac
 	done
