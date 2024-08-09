@@ -173,12 +173,40 @@ V|v) #NORDVPN
 	case $answer in
 	
 	o|O|c|C)
-		sudo nordvpn c
-		sudo nordvpn status
-			echo $FAIT
-			echo $ENTER
-		read victor
-		#continue
+			echo " "
+			echo "  ==> Connection serveur de quel pays?"
+			echo "      1) Le plus rapide"
+   			echo "      C) Canada - CAN"
+      			echo "      E) États-Unis - USA"
+		read -p "Choix: " country
+  		case $country in
+
+    		1)
+  			sudo nordvpn c
+			sudo nordvpn status
+				echo $FAIT
+				echo $ENTER
+			read victor
+		;;
+  		c|C|can|CAN)
+  			sudo nordvpn c Canada
+			sudo nordvpn status
+				echo $FAIT
+				echo $ENTER
+			read victor
+      		;;
+		u|U|e|E|usa|USA)
+    			sudo nordvpn c United_States
+			sudo nordvpn status
+				echo $FAIT
+				echo $ENTER
+			read victor
+  		;;
+    
+  		*)
+		;;
+	
+		esac
 	;;
 	
 	#n|N)
@@ -197,10 +225,8 @@ V|v) #NORDVPN
 	
 	*)
 	;;
-	
 	esac
-	#done
-#continue
+	
 ;;
     
 L|l) #liste Aliases
