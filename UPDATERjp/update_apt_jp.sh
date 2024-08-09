@@ -179,7 +179,7 @@ V|v|n|N) #NORDVPN
  
 	case $answer in
 	
-	O|o|C|c)
+	O|o|C|c) #connect nord VPN
 		clear 
 			echo "" && echo $ENTETE
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
@@ -194,54 +194,44 @@ V|v|n|N) #NORDVPN
 		read -p "Choix: " country
   		case $country in
 
-    		1)
+    		1) #le plus rapide
   			sudo nordvpn c
 			sudo nordvpn status
 				echo $FAIT
-				echo $ENTER
     				echo -e "$italic$YELLOW Retour au Menu NordVPN $nc"
+				echo $ENTER
 			read victor
 		;;
-  		C|c|CAN|can)
+  		C|c|CAN|can) #Canada
   			sudo nordvpn c Canada
 			sudo nordvpn status
 				echo $FAIT
-				echo $ENTER
-    				echo -e "$italic$YELLOW Retour au Menu NordVPN $nc"
+				echo -e "$italic$YELLOW Retour au Menu NordVPN $nc"
+    				echo $ENTER
 			read victor
       		;;
-		U|c|E|e|usa|USA)
+		U|c|E|e|usa|USA) #Etats-Unis
     			sudo nordvpn c United_States
 			sudo nordvpn status
 				echo $FAIT
-				echo $ENTER
     				echo -e "$italic$YELLOW Retour au Menu NordVPN $nc"
+				echo $ENTER
 			read victor
   		;;
-    
   		*)
 		;;
-	
 		esac
 	;;
 	
-	#n|N)
-		#continue
-	#;;
-	
-	D|d) #elif [ $answer = d ]
-		#then
+	D|d) #disconnect nord vpn
 		sudo nordvpn d
 		sudo nordvpn status
 			echo $FAIT
 			echo $ENTER
 		read victor
-		#continue
 	;;
-	
 	*)
  		break
-    	
 	;;
 	esac
 	done
@@ -287,8 +277,7 @@ D|d) #système de démarrage
 		echo " "
 	read -p "Choix: " answer
 	case $answer in
-	d|D) #if [ $answer = d ]
-		#then
+	d|D) #
 		sudo apt install systemd-sysv
 			echo -e "\e[5m\e[92m"
 			echo "systemD par DEFAULT"
@@ -296,8 +285,7 @@ D|d) #système de démarrage
 		read delta
 	;;
 	
-	v|V) #elif [ $answer = v ]
-		#then
+	v|V) #
 		sudo apt remove systemd-sysv
 			echo -e "\e[5m\e[92m"
 			echo "sysVinit par DEFAULT"
@@ -328,16 +316,14 @@ I|i) #info système
 	
 	case $answer in
 	
-	c|C) #if [ $answer = c ]
-	#then
+	c|C) #
 		gkbd-keyboard-display -g 1
 			echo $FAIT
 			echo $ENTER
 		read India
 	;;
 	
-	i|I) #elif [ $answer = i ]
-	#then
+	i|I) #
 		clear
 			echo "" && echo $ENTETE
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE       Info Système/batterie TLP      $highlight$RED   $CYAN   $GOLD   $nc"
@@ -350,7 +336,6 @@ I|i) #info système
 			echo $ENTER
 		read india
 	;;
-	
 	*)
 	;;
 	esac
@@ -389,24 +374,21 @@ W|w) #WIFI
 	
 	case $answer in
 	
-	"1") #if [ $answer -eq 1 ]
-		#then
+	"1") #
 			echo "INFO réseau"
 		nmcli
 			echo $FAIT
 		read whisky
 	;;
 	
-	"2") #elif [ $answer -eq 2 ]
-	#then
+	"2") #
 			echo "INFO DÉTAILLÉES réseau"
 		nmcli device show
 			echo $FAIT
 		read whisky
 	;;
 
-	"3") #elif [ $answer -eq 3 ]
-	#then
+	"3") #
 			echo "Redémarrage WIFI en cours ...."
 		wifi off && wifi on
 			echo -e "\e[5m\e[92m"
@@ -480,8 +462,7 @@ COW|cow) #COWSAY ET FORTUNE
 	
 	case $answer in
 	
-	"1") #if [ $answer = 1 ]
-	#then
+	"1") #
 		clear
 			echo ""
 			echo ""
@@ -497,8 +478,7 @@ COW|cow) #COWSAY ET FORTUNE
 		read charlieoscar
 	;;
 	
-	"2") #elif [ $answer = 2 ]
-	#then
+	"2") #
 		clear
 			echo ""
 			echo ""
