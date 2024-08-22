@@ -54,7 +54,7 @@ afficher_menu(){
 		echo -e "[ V ou N ] Vérification et démarrage NORDVPN"
 		echo -e "[ W ] Gestion WIFI"
   		echo -e "[ S ou VIT ] Test vitesse internet "
-		echo -e "$italic$CYAN[ N ]$nc $highlight$BLUE Choix serveur MAJ-NALA (>rapide au moins) $nc"
+		echo -e "$italic$CYAN[ NALA ]$nc $highlight$BLUE Choix serveur MAJ-NALA (>rapide au moins) $nc"
 		echo -e "[ A ] ALSAMIXER (ajuste son du terminal)"
 		echo -e "[ D ] Systemd ou sysVinit [choix système de démarrage]" 
 		echo -e "[ R ] REDSHIFT config (éclairage de nuit)"
@@ -137,7 +137,7 @@ M|m) #MISE A JOUR
 	read mike
 ;;
 
-N|a|NALA|nala) #Choix serveurs NALA -vitesse
+NALA|nala) #Choix serveurs NALA -vitesse
 	clear
 		echo "" && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE           TEST DE VITESSE            $highlight$RED   $CYAN   $GOLD   $nc"
