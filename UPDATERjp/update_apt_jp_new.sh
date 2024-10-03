@@ -47,6 +47,7 @@ afficher_menu(){
 		echo $ENTETE #&& echo ""
 		echo -e "$BLACK       S E C U R I T E                                $nc"
 		echo -e "$italic$CYAN[ M ]$nc $highlight$CYAN MAJ + nettoyage (NALA/APT-SNAP-FLATPAK) $nc"
+	 	echo -e "$italic$CYAN[ MAJ ]$nc $highlight$GOLD MAJ + nettoyage (PKCON-SNAP-FLATPAK) $nc"
 		echo -e "[ C ] Vérification ANTIVIRUS ClamAV"
 		echo -e "[ ROOT ] #Vérification ROOTKIT [chkrootkit + rkhunter]"
   		echo -e ""
@@ -74,18 +75,19 @@ while true; do
 	afficher_menu
 	read -p "Choix: " CHOIX
 
-case $CHOIX in
 
-M|m) #MISE A JOUR
-	clear
-		echo "" && echo $ENTETE
-		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             MISE A JOUR              $highlight$RED   $CYAN   $GOLD   $nc"
-		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE            S Y S T E M E             $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE &&	echo ""
+entete_maj(){
+	echo "" && echo $ENTETE
+	echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             MISE A JOUR              $highlight$RED   $CYAN   $GOLD   $nc"
+	echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE            S Y S T E M E             $highlight$RED   $CYAN   $GOLD   $nc"
+	echo $ENTETE &&	echo ""
+}
+
+update_apt_nala(){
 		echo -e "$highlight$GREEN    update apt/nala     $nc"
 	sudo apt install nala
-	#sudo nala install
-#APT-NALA
+		#sudo nala install
+ 		#APT-NALA
 	sudo nala update
 		echo -e "$highlight$GREEN    maj listes     $nc"
 	sudo nala list --upgradable
@@ -93,7 +95,20 @@ M|m) #MISE A JOUR
 	sudo nala upgrade --full -y
 		echo -e "$highlight$GREEN    reparation paquets nala     $nc"
 	sudo nala install -f
-#SNAP		
+}
+
+update_pkcon(){
+		echo -e "$highlight$GREEN    update PKCON     $nc"
+	sudo apt update
+		echo -e "$highlight$GREEN    pkcon REFRESH     $nc"
+	sudo pkcon refresh
+		echo -e "$highlight$GREEN    pkcon UPDATE     $nc"
+	sudo pkcon update
+#		echo -e "$highlight$GREEN    apt full-upgrade     $nc"
+#	apt full-upgrade
+}
+
+update_snap(){
 		echo $ENTETE
 		echo -e "$GOLD                     Mise à jour SNAP       "
 		echo -e "               (sudo snap refresh ; --time)  $nc"
@@ -101,7 +116,9 @@ M|m) #MISE A JOUR
 	sudo snap refresh
 	sudo snap refresh --time
 		echo $FAIT
-#FLATPAK
+}
+
+update_flatpak(){
 		echo $ENTETE
 		echo -e "$GOLD                     Mise à jour Flatpak "
 		echo -e "             (sudo flatpak update & list --app) $nc"
@@ -109,7 +126,9 @@ M|m) #MISE A JOUR
 	sudo flatpak list --app
 	sudo flatpak -y update
 		echo $FAIT
-#GITHUB
+}
+
+update_github(){
 		echo $ENTETE
 		echo -e "$GOLD                     Mise à jour GitHub $nc"
 		echo $ENTETE
@@ -118,7 +137,9 @@ M|m) #MISE A JOUR
 	git status 
 	cd ~/
 		echo $FAIT
-#NETTOYAGE
+}
+
+update_nettoyage(){
 		echo $ENTETE
 		echo -e "$GOLD                         Nettoyage $nc"
 		echo $ENTETE
@@ -133,12 +154,41 @@ M|m) #MISE A JOUR
 	sudo fstrim -v /
 	sudo update-icon-caches /usr/share/icons/*
 		#from https://sourceforge.net/p/peppermintos/pepwiki/xDaily%20-%20A%20Complete%20System%20Updater/
-  #WIFI autosave
-  	#sudo iw wlan0 set power_save off
-   	echo "Etat mise en veille WIFI"
+}
+
+etat_wifi_autosave(){
+		#sudo iw wlan0 set power_save off
+   		echo "Etat mise en veille WIFI"
    	iw wlan0 get power_save
-		echo $ENTER
-	read mike
+		echo $ENTER	
+}
+
+case $CHOIX in
+
+M|m) #MISE A JOUR APT
+	clear
+	entete_maj
+	update_apt_nala
+	update_snap
+ 	update_flatpak
+  	update_github
+   	update_nettoyage
+	etat_wifi_autosave
+  		echo $ENTER
+		read mike
+;;
+
+MAJ|maj|Maj) #MISE A JOUR PKCON
+	clear
+	entete_maj
+	update_pkcon
+	update_snap
+ 	update_flatpak
+  	update_github
+   	update_nettoyage
+	etat_wifi_autosave
+  		echo $ENTER
+		read mikes
 ;;
 
 NALA|nala) #Choix serveurs NALA -vitesse
