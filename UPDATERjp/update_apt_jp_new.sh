@@ -41,7 +41,7 @@ updater="~/Documents/Github/update_apt_jp.sh" #Installer le script à cet endroi
 #FCT Raccourci
 SAUT(){ 
 	echo -e ""
-	}
+}
  
 afficher_menu(){
 	clear
