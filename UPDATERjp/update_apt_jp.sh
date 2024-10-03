@@ -133,6 +133,10 @@ M|m) #MISE A JOUR
 	sudo fstrim -v /
 	sudo update-icon-caches /usr/share/icons/*
 		#from https://sourceforge.net/p/peppermintos/pepwiki/xDaily%20-%20A%20Complete%20System%20Updater/
+  #WIFI autosave
+  	#sudo iw wlan0 set power_save off
+   	echo "Etat mise en veille WIFI"
+   	iw wlan0 get power_save
 		echo $ENTER
 	read mike
 ;;
