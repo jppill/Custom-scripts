@@ -423,7 +423,7 @@ W|w) #WIFI
 		echo "       [ 2 ]  INFOS détaillées réseau   [CTRL+C pour revenir du rapport]" 
 		echo -e "\e[95m"
 		echo "       [ 3 ]  Redémarrage WIFI "
-		echo "       [ 4 ]   "
+		echo "       [ 4 ]  Mise a off de de la mise en veille auto WIFI "
 		echo -e "\e[94m"
 		echo "       [ 5 ]  Quitter sans rien modifier "
 		echo -e "\e[0m"
@@ -453,6 +453,21 @@ W|w) #WIFI
 			echo $ENTER
 		read whisky
 	;;
+	
+ 	"4") #Autosave
+			echo "Etat mise en veille WIFI avant modif"
+   		iw wlan0 get power_save	
+    			echo "Mise a off WIFI"
+      		sudo iw wlan0 set power_save off
+   			echo "Etat mise en veille WIFI après modif"
+   		iw wlan0 get power_save
+			echo $ENTER
+		read whisky
+	;;
+
+#sudo iw wlan0 set power_save off
+   		echo "Etat mise en veille WIFI"
+   	iw wlan0 get power_save
 
 	*) 
 			echo "    Fermeture du programme sans changement." 
