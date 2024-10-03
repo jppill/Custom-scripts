@@ -39,8 +39,8 @@ updater="~/Documents/Github/update_apt_jp.sh" #Installer le script à cet endroi
 	ENTER="-e $blink$YELLOW [ ENTER ] $nc"
 	ENTETE="-e $darkgreen========================================================== $nc"
 #FCT Raccourci
-	SAUT(){ 
-		echo -e ""
+SAUT(){ 
+	echo -e ""
 	}
  
 afficher_menu(){
