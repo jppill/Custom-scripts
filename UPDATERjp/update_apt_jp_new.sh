@@ -38,6 +38,10 @@ updater="~/Documents/Github/update_apt_jp.sh" #Installer le script à cet endroi
 	FAIT="-e $blink$GREEN    FAIT   $nc"
 	ENTER="-e $blink$YELLOW [ ENTER ] $nc"
 	ENTETE="-e $darkgreen========================================================== $nc"
+#Raccourci
+        SAUT(){ 
+		echo -e ""
+	}
  
 afficher_menu(){
 	clear
