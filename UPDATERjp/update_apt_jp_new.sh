@@ -2,7 +2,7 @@
 # immulator : https://repl.it/repls/DarkgreyMustyEmulation#main.sh
 #source ~/.bashrc
 updater="~/Documents/Github/update_apt_jp.sh" #Installer le script à cet endroit
-#Couleurs - Liste couleurs sur bash: https://misc.flogisoft.com/bash/tip_colors_and_formatting
+#ALIAS_Couleurs - Liste couleurs sur bash: https://misc.flogisoft.com/bash/tip_colors_and_formatting
 	black='\e[0;4m' #noir
 	BLACK='\e[1;4m' #noir GRAS
 	red='\e[0;31m' #rouge pale
@@ -28,17 +28,17 @@ updater="~/Documents/Github/update_apt_jp.sh" #Installer le script à cet endroi
 	purple='\e[0;95m' #mauve
 	PURPLE='\e[1;95m' #mauve GRAS
 	nc='\e[0m' #no color=régulier
-#Spécial - fonctionne qu'avec les couleurs en GRAS
+#ALIAS_Spécial - fonctionne qu'avec les couleurs en GRAS
 	fade="\e[2m" #plus pale
 	italic="\e[3m" #italique
 	underline="\e[4m" #sousligne
 	blink="\e[5m" #clignote
 	highlight="\e[7m" #surligne
-#Mise-en-page
+#ALIAS_Mise-en-page
 	FAIT="-e $blink$GREEN    FAIT   $nc"
 	ENTER="-e $blink$YELLOW [ ENTER ] $nc"
 	ENTETE="-e $darkgreen========================================================== $nc"
-#Raccourci
+#FCT Raccourci
 	SAUT(){ 
 		echo -e ""
 	}
@@ -468,10 +468,6 @@ W|w) #WIFI
 			echo $ENTER
 		read whisky
 	;;
-
-#sudo iw wlan0 set power_save off
-   		echo "Etat mise en veille WIFI"
-   	iw wlan0 get power_save
 
 	*) 
 			echo "    Fermeture du programme sans changement." 
