@@ -39,22 +39,22 @@ updater="~/Documents/Github/update_apt_jp.sh" #Installer le script à cet endroi
 	ENTER="-e $blink$YELLOW [ ENTER ] $nc"
 	ENTETE="-e $darkgreen========================================================== $nc"
 #Raccourci
-        SAUT(){ 
+	SAUT(){ 
 		echo -e ""
 	}
  
 afficher_menu(){
 	clear
-		echo "" && echo $ENTETE
+		SAUT && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$GOLD          U P D A T E R j p           $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$CYAN            Gestion L I N U X         $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE #&& echo ""
+		echo $ENTETE #&& SAUT
 		echo -e "$BLACK       S E C U R I T E                                $nc"
 		echo -e "$italic$CYAN[ M ]$nc $highlight$CYAN MAJ + nettoyage (NALA/APT-SNAP-FLATPAK) $nc"
 	 	echo -e "$italic$CYAN[ MAJ ]$nc $highlight$GOLD MAJ + nettoyage (PKCON-SNAP-FLATPAK) $nc"
 		echo -e "[ C ] Vérification ANTIVIRUS ClamAV"
 		echo -e "[ ROOT ] #Vérification ROOTKIT [chkrootkit + rkhunter]"
-  		echo -e ""
+  		SAUT
 		echo -e "$BLACK       P A R A M E T R E S                            $nc"
 		echo -e "[ V ou N ] Vérification et démarrage NORDVPN"
 		echo -e "[ W ] Gestion WIFI"
@@ -63,16 +63,16 @@ afficher_menu(){
 		echo -e "[ A ] ALSAMIXER (ajuste son du terminal)"
 		echo -e "[ D ] Systemd ou sysVinit [choix système de démarrage]" 
 		echo -e "[ R ] REDSHIFT config (éclairage de nuit)"
-  		echo -e ""
+  		SAUT
 		echo -e "$BLACK       I N F O                                        $nc"
 		echo -e "[ I ] INFO Système/batterie TLP"
 		echo -e "[ L ] Liste ALIAS perso"
-  		echo -e ""
+  		SAUT
 		echo -e "$BLACK       A U T R E                                      $nc"
 		echo -e "[ COW ] COWSAY game"
-  		echo ""
+  		SAUT
 		echo -e "$PURPLE[ Q ] QUITTER $italic ou juste appuyer [enter] $nc"
-		echo ""
+		SAUT
 	}
 	
 while true; do
@@ -81,10 +81,10 @@ while true; do
 
 
 entete_maj(){
-	echo "" && echo $ENTETE
+	SAUT && echo $ENTETE
 	echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             MISE A JOUR              $highlight$RED   $CYAN   $GOLD   $nc"
 	echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE            S Y S T E M E             $highlight$RED   $CYAN   $GOLD   $nc"
-	echo $ENTETE &&	echo ""
+	echo $ENTETE &&	SAUT
 }
 
 update_apt_nala(){
@@ -197,10 +197,10 @@ MAJ|maj|Maj) #MISE A JOUR PKCON
 
 NALA|nala) #Choix serveurs NALA -vitesse
 	clear
-		echo "" && echo $ENTETE
+		SAUT && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE           TEST DE VITESSE            $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE           S E R V E U R S            $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE && echo ""
+		echo $ENTETE && SAUT
 	sudo nala fetch
  		echo $ENTER
 	read november
@@ -208,41 +208,41 @@ NALA|nala) #Choix serveurs NALA -vitesse
 
 V|v|n|N) #NORDVPN
 		clear 
-		echo "" && echo $ENTETE
+		SAUT && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE && echo ""
+		echo $ENTETE && SAUT
 	nordvpn version
 	nordvpn account
-		echo "" 	
+		SAUT 	
 	sudo systemctl start nordvpnd
 	nordvpn settings
 		echo $ENTER
 	read victor
  	afficher_menuvpn(){	
 		clear 
-			echo "" && echo $ENTETE
+			SAUT && echo $ENTETE
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
-			echo $ENTETE && echo ""
+			echo $ENTETE && SAUT
 	  	nordvpn version
 		nordvpn status
-  			echo ""
+  			SAUT
     			echo "      [ O ou C ] Lancement de la Connection Nordvpn"
 	 		echo "      [ D ] Déconnection"
     			echo -e " $PURPLE$italic     [ ENTER ] Retour au menu PRINCIPAL $nc"
-       			echo ""		
+       			SAUT
 		}
 	while true; do
 		afficher_menuvpn
-  		echo ""
+  		SAUT
 		read -p "Choix: " answer
  
 	case $answer in
 	
 	O|o|C|c) #connect nord VPN
 		clear 
-			echo "" && echo $ENTETE
+			SAUT && echo $ENTETE
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                N O R D               $highlight$RED   $CYAN   $GOLD   $nc"
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                V  P  N               $highlight$RED   $CYAN   $GOLD   $nc"
 			echo $ENTETE && echo ""
@@ -251,7 +251,7 @@ V|v|n|N) #NORDVPN
    			echo "      [ C ] Canada - CAN"
       			echo "      [ E ou U ] États-Unis - USA"
 	   		echo -e " $PURPLE$italic     [ ENTER ] Retour au menu NordVPN $nc"
-      			echo ""
+      			SAUT
 		read -p "Choix: " country
   		case $country in
 
@@ -300,42 +300,42 @@ V|v|n|N) #NORDVPN
     
 L|l) #liste Aliases
 	clear
- 		echo "" && echo $ENTETE
+ 		SAUT && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE               L I S T E              $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                    ALIAS             $highlight$RED   $CYAN   $GOLD   $nc"
 		echo $ENTETE &&	echo ""
 		echo -e "$DARKGREEN"
-		echo ""
-		echo ""
-		echo ""
-		echo ""
+		SAUT
+  		SAUT
+    		SAUT
+      		SAUT
 		echo "Quitter le script en appuyant sur [ENTER] et écrire « alias » dans le terminal"
-		echo ""
+		SAUT
 		echo -e -n "retour automatique au menu précédent (5..." && sleep 1s && echo -n "4..." && sleep 1s && echo -n "3..." && sleep 1s && echo -n "2..." && sleep 1s && echo -n "1sec)" && sleep 1s
   		echo -e "$nc"
 ;;
 
 D|d) #système de démarrage
 	clear
-		echo "" && echo $ENTETE
+		SAUT && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE      Demarrage par defaut avec       $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE        systemD ou sysVinit?          $highlight$RED   $CYAN   $GOLD   $nc"
 		echo $ENTETE && echo ""		
 		echo " ==> Que veux-tu faire?"
 		echo -e "\e[92m"
-		echo ""
+		SAUT
 		echo "       [ d ]  systemD par default "
-		echo ""
+		SAUT
 		echo "                  Systemd est actuellement le standard le plus utilisé en termes de \"Kernel Boot Systems\" (Init) qui peut être réalisé dans les environnements Unix, tels que Linux. Démarre les processus en parallèle. Plus lourd, plus d'accès que sysVinit."
-		echo ""
-		echo ""
+		SAUT
+  		SAUT
 		echo "       [ v ]  sysVinit par default "
-		echo ""
+		SAUT
 		echo "                  SysVinit est l'un des plus anciens et actuels Administrateurs de systèmes et services pour systèmes basés sur Linux. Il est encore largement utilisé sur de nombreux Distros GNU / Linux de trajectoires, et de nouvelles, comme Devuan. Démarre les processus en série. Très petit script et demande peu d'accès aux processus."
-		echo " "
-		echo ""
+		SAUT
+  		SAUT
 		echo "       [ ENTER ]  retour sans rien changer "
-		echo " "
+		SAUT
 	read -p "Choix: " answer
 	case $answer in
 	d|D) #
@@ -361,10 +361,10 @@ D|d) #système de démarrage
 
 I|i) #info système
 	clear
-  		echo "" && echo $ENTETE
+  		SAUT && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             I N F O SYSTEME          $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             &   A U T R E S          $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE &&	echo "" && echo " " 
+		echo $ENTETE &&	SAUT && SAUT 
 		echo "  ==> Quelles informations souhaites-tu obtenir?"
 		echo -e "\e[93m"
 		echo "      [ C ] layout CLAVIER actuel (en image interactive)"
@@ -386,13 +386,13 @@ I|i) #info système
 	
 	i|I) #
 		clear
-			echo "" && echo $ENTETE
+			SAUT && echo $ENTETE
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE       Info Système/batterie TLP      $highlight$RED   $CYAN   $GOLD   $nc"
 			echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE            (tlp-stat -s)             $highlight$RED   $CYAN   $GOLD   $nc"
-			echo $ENTETE &&	echo ""		
+			echo $ENTETE &&	SAUT		
 		sudo nala install tlp
   		sudo tlp-stat -s # état système et batterie
-			echo ""
+			SAUT
 		cat /etc/os-release
 			echo $ENTER
 		read india
@@ -403,10 +403,10 @@ I|i) #info système
 ;;
 
 R|r) #REDSHIFT
-			echo "" && echo $ENTETE
+			SAUT && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE               REDSHIFT               $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                                      $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE &&	echo ""	
+		echo $ENTETE &&	SAUT
   	echo "Redshift"
 	kate /home/jp/.config/redshift.conf
 ;;
@@ -417,10 +417,10 @@ A|a) # SON
 
 W|w) #WIFI
 	clear
-  		echo "" && echo $ENTETE
+  		SAUT && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE              G E S T I O N           $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE              W   I   F   I           $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE &&	echo "" && echo " " 		
+		echo $ENTETE &&	SAUT && SAUT 		
 		echo " ==> Que veux-tu faire?"
 		echo -e "\e[92m"
 		echo "       [ 1 ]  INFOS réseau              [CTRL+C pour revenir du rapport]"
@@ -482,10 +482,10 @@ W|w) #WIFI
 
 S|s|VIT|vit) #test vitesse internet
 	clear
-		echo "" && echo $ENTETE
+		SAUT && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE              V I T E S S E           $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE             I N T E R N E T          $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE &&	echo ""
+		echo $ENTETE &&	SAUT
 	sudo speedtest --bytes
  	speedtest #bit
 		echo $ENTER 
@@ -495,10 +495,10 @@ S|s|VIT|vit) #test vitesse internet
 
 ROOT|root) #ROOTKIT
 	clear
-		echo "" && echo $ENTETE
+		SAUT && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE         Verification ROOTKIT         $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                                      $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE &&	echo ""
+		echo $ENTETE &&	SAUT
   	
 		echo -e "\e[93m                  (chkrootkit + rkhunter) "
 		
@@ -512,10 +512,10 @@ ROOT|root) #ROOTKIT
 
 C|c) #CLAMSHELL - ANTIVIRUS
 	clear
-  		echo "" && echo $ENTETE
+  		SAUT && echo $ENTETE
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE       Verification ANTIvirus         $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                                      $highlight$RED   $CYAN   $GOLD   $nc"
-		echo $ENTETE &&	echo ""
+		echo $ENTETE &&	SAUT
   
 		echo -e "\e[93m                          (ClamAV) "
 		
@@ -533,10 +533,10 @@ C|c) #CLAMSHELL - ANTIVIRUS
 
 COW|cow) #COWSAY ET FORTUNE
 	clear
-		echo "" && echo $ENTETE
+		SAUT && echo $ENTETE
   		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE               C O W S A Y            $highlight$RED   $CYAN   $GOLD   $nc"
 		echo -e " $highlight$GOLD   $CYAN   $RED   $nc$BLUE                                      $highlight$RED   $CYAN   $GOLD   $nc"		
-  		echo $ENTETE &&	echo ""
+  		echo $ENTETE &&	SAUT
 		echo " ==> Que veux-tu faire?"
 		echo -e "\e[92m"
 		echo ""
@@ -553,34 +553,34 @@ COW|cow) #COWSAY ET FORTUNE
 	
 	"1") #
 		clear
-			echo ""
-			echo ""
+			SAUT
+			SAUT
 		cowsay -l
-			echo ""
+			SAUT
 		read -p "animal: " animal
 		clear
-			echo ""
-			echo ""
+			SAUT
+   			SAUT
 		fortune | cowsay -f $animal
-			echo "" 
+			SAUT
 			echo $ENTER
 		read charlieoscar
 	;;
 	
 	"2") #
 		clear
-			echo ""
-			echo ""
+			SAUT
+			SAUT
 		cowsay -l
-			echo ""
+			SAUT
 		read -p "animal: " animal
-			echo ""
+			SAUT
 		read -p "ce qu'il dira: " say
 		clear
-			echo ""
-			echo ""
+			SAUT
+   			SAUT
 		cowsay -f $animal $say
-			echo "" 
+			SAUT
 			echo $ENTER
 		read charlieoscar
 	;;
