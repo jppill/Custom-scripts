@@ -27,7 +27,7 @@ echo -e "\e[93m" #96cyan/91red/92green/93yellow/95magenta
 		echo "================================================="
 echo -e "\e[0m"
 
-sudo apt -y install gimp digikam kcolorchooser speedcrunch kfind libc6-dev-i386 partitionmanager gdebi-core yakuake synaptic gufw wine playonlinux kbackup flac gimp variety catfish lolcat git tlp tlp-rdw hardinfo python3 python3-pip bleachbit cherrytree libasound2-plugin-equal libasound2-plugin-smixer libasound2-plugins speedtest-cli scratch zoom stellarium supertux supertuxkart supertuxkart-data dolphin shotwell chemical-structures-data coolmail abe abe-data cool-retro-term frozen-bubble qreator kalzium stacer marble vlc okular cowsay fortunes fortune-mod snapd clamav-daemon clamtk chkrootkit rkhunter firejail firetools flatpak;
+sudo apt -y install gimp digikam kcolorchooser speedcrunch kfind libc6-dev-i386 partitionmanager gdebi-core yakuake synaptic gufw wine playonlinux kbackup flac gimp variety catfish lolcat git tlp tlp-rdw hardinfo python3 python3-pip bleachbit cherrytree libasound2-plugin-equal libasound2-plugin-smixer libasound2-plugins speedtest-cli scratch stellarium supertux supertuxkart supertuxkart-data dolphin shotwell chemical-structures-data coolmail abe abe-data cool-retro-term frozen-bubble qreator kalzium stacer marble vlc okular cowsay fortunes fortune-mod snapd clamav-daemon clamtk chkrootkit rkhunter firejail firetools flatpak;
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install fluentreader telegram feeddeck;
 sudo nordvpn s tpl 1 ;
