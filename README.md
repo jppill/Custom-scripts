@@ -67,7 +67,7 @@ git remote
   *La commande suivante s'inscrit dans le terminal, t'amène dans le bon répertoire, met a jour, puis retourne dans le répertoire initial*
   
 ```sh
-cd ~/Documents/Github/ && git pull scripts-gh main && cd \
+cd ~/Documents/Github/ && git pull scripts-gh main && cd
 ```
 
 > Pour la première mise à jour, à ajouter à la fin de la commande **_pull_**
