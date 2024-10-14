@@ -107,9 +107,9 @@ update_pkcon(){
 		echo -e "$highlight$GREEN    pkcon REFRESH     $nc"
 	sudo pkcon refresh
 		echo -e "$highlight$GREEN    pkcon UPDATE     $nc"
-	sudo pkcon update
+	sudo pkcon update -y
 #		echo -e "$highlight$GREEN    apt full-upgrade     $nc"
-#	apt full-upgrade
+#	apt full-upgrade -y
 }
 
 update_snap(){
