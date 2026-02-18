@@ -177,7 +177,7 @@ M|m) #MISE A JOUR APT
  	update_flatpak
   	update_github
    	update_nettoyage
-	etat_wifi_autosave
+	#etat_wifi_autosave
   		echo $ENTER
 		read mike
 ;;
@@ -190,7 +190,7 @@ MAJ|maj|Maj) #MISE A JOUR PKCON
  	update_flatpak
   	update_github
    	update_nettoyage
-	etat_wifi_autosave
+	#etat_wifi_autosave
   		echo $ENTER
 		read mikes
 ;;
